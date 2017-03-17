@@ -1,6 +1,8 @@
 class BusinessCardsController < ApplicationController
-  def index
-  end
 
+  def show
+    @card = BusinessCard.find(params[:id])
+    render json: @card
+  end
 
 end
