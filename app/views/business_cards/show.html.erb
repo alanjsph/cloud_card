@@ -1,0 +1,6 @@
+<h1> All business cards of <%= @user.name %></h1>
+<% @business_cards.each do |card| %>
+  Name: <%= card.name %> <br/>
+  mobile: <%= card.mobile %> <br>
+  email: <%= card.email %> <br>
+<% end %>
