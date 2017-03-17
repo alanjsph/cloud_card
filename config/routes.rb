@@ -7,7 +7,12 @@ Rails.application.routes.draw do
 
   root "users#index"
   resources :users
-  resources :business_cards
+
+  resources :business_cards do
+    member do
+      get :email
+    end
+  end
 
 
 
