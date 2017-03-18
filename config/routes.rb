@@ -23,6 +23,10 @@ Rails.application.routes.draw do
     end
   end
 
+  namespace :api, defaults: {format: :json}, constraints: {subdomain: 'api'}, path: '/'  do
+
+  end
+
 
 
 
