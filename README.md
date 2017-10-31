@@ -7,7 +7,7 @@ Cloud based business card management platform
   - Business cards
   - Users
 
-# Technologies Used!
+# Technologies Used
 
   - Rails
   - PostgreSQL
