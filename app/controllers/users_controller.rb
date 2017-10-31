@@ -14,7 +14,6 @@ class UsersController < ApplicationController
   def receivedcards_email
     @user = User.find(params[:id])
     @business_cards = @user.business_cards
-    #@business_cards = @user.business_cards.all
     email = @user.business_cards.pluck(:email).map.with_index{|email, index| {index => email}}.reduce(:merge)
     render json: email, status: 200
     #render json: {alan: 123}
