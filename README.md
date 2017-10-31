@@ -11,3 +11,4 @@ Cloud based business card management platform
 
   - Rails
   - PostgreSQL
+  - Devise
